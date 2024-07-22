@@ -18,7 +18,6 @@ section {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 30px;
 }
-
 .row-one p {
   max-width: 300px;
   margin-top: 15px;
@@ -29,25 +28,29 @@ section {
 }
 .second-row {
   display: flex;
-  align-items: center;
   gap: 10px;
 }
-.card {
-  /* width: 100%; */
-}
 select {
-  padding: 10px 30px;
+  padding: 10px 5px;
   font-weight: bold;
   outline: none;
 }
 button {
   padding: 10px 30px;
+  background-color: green;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+i {
+  color: green;
 }
 .second-data {
   margin-top: 20px;
   padding: 30px;
   display: flex;
   background-color: rgb(229, 233, 227);
+  border-radius: 5px;
 }
 .data-para {
   max-width: 300px;
@@ -59,4 +62,32 @@ button {
 }
 h3 {
   margin-bottom: 10px;
+}
+
+@media (max-width: 833px) {
+  .first-row {
+    flex-direction: column;
+  }
+  body {
+    padding: 5px;
+    height: auto;
+  }
+}
+
+@media (max-width: 677px) {
+  .second-data {
+    flex-direction: column;
+  }
+  .data-one {
+    margin: 20px 0;
+  }
+  .second-row {
+    flex-direction: column;
+  }
+  select {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
 }
